@@ -1,14 +1,18 @@
 # snowcover_project
 
-A description of what steps we need to carry out to develop snow masks for CDI.
+A description of the steps needed for the development of snow masks for the Combined Drought Indicator.
 
-## Input data
+## Introduction
 
-The paper of [Richiardi et al.](https://www.mdpi.com/2072-4292/13/10/1957) originally uses L1C Sentinel-2 data. These data need:
-- atmospheric and topographic correction using  "Sen2Cor" (ouput: L2A data)
-- cloud mask extraction (using FMASK)
+The paper of [Richiardi et al.](https://www.mdpi.com/2072-4292/13/10/1957) originally uses L1C Sentinel-2 data. 
 
-Richiardi and Adamo propose to **skip** the atmospheric correction (Sen2Cor) and use the L2A data available through the [Open Access Hub](https://sentinel.esa.int/web/sentinel/sentinel-data-access).
+These data need:
+  - atmospheric and topographic correction using  "Sen2Cor" (ouput: L2A data)
+  - cloud mask extraction (using FMASK)
+
+Richiardi and Adamo propose to: 
+  - **skip** the atmospheric correction (Sen2Cor) 
+  - use the L2A data available through the [Open Access Hub](https://sentinel.esa.int/web/sentinel/sentinel-data-access)
 
 ## Snow Masks 
 
@@ -31,7 +35,7 @@ Richiardi and Adamo propose to **skip** the atmospheric correction (Sen2Cor) and
 - Review the [rLIS code](https://github.com/chiararik/rLIS_VLab) (fix the parameters if needed)
 - Translate the code from R to Python
 
-## Datasets
+## Input Data
 
 - Sentinel L2A data
 - Digital Elevation Model for Europe ([EU-DEM](https://land.copernicus.eu/imagery-in-situ/eu-dem/eu-dem-v1.1))
